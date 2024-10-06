@@ -22,6 +22,8 @@ document
   .addEventListener("submit", handleTaskSubmission);
 
   window.addEventListener("DOMContentLoaded", fetchTasks);
+//
+
 
 function fetchTasks() {
   fetch("http://localhost:3000/tasks")
@@ -74,7 +76,7 @@ function addTaskToList(task) {
 }
 
 function deleteTaskFromBackend(taskId, taskElement) {
-  fetch('http://localhost:3000/tasks/${taskID}', {
+  fetch(`http://localhost:3000/tasks/${taskId}`, {
     method: "DELETE"
   })
     .then(() => {
