@@ -23,9 +23,12 @@ const LoginButton = () => {
     };
 
     return (
-        <button className="Login-button" onClick={() => login()}>
-            Log In
-        </button>
+        <Button onClick={() => login()} type="submit" variant="contained" color="primary">
+          Sign Up / Log In
+        </Button>
+        // <button className="Login-button" onClick={() => login()}>
+        //     Log In
+        // </button>
     );
 };
 
